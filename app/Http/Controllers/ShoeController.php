@@ -18,5 +18,9 @@ public function show(Shoe $shoe)
   return view('shoes.show', compact('shoe'));
 }
 
+public function create()
+{
+    return view('shoes.create');
+}
 
 }
