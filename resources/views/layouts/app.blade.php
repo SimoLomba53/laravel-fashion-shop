@@ -35,7 +35,7 @@
         <!-- Left Side Of Navbar -->
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('homepage') }}">{{ __('Home') }}</a>
+            <a class="nav-link" href="{{ route('shoes.index') }}">{{ __('Home') }}</a>
           </li>
         </ul>
 
