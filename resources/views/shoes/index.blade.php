@@ -29,7 +29,8 @@
             <td>{{ $shoe->price_resell }}</td>
             <td>{{ $shoe->discount }}</td>
             
-            <td><a href="">dettaglio</a></td>
+            <td> <a href="{{ route('shoes.show', $shoe) }}"> Dettaglio </a>
+            </td>
         </tr>
         @endforeach
     </tbody>
