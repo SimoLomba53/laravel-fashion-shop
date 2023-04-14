@@ -13,7 +13,7 @@ public function index()
   return view('shoes.index', compact('shoes'));
 }
 
-public function show(Shoes $shoe)
+public function show(Shoe $shoe)
 {
   return view('shoes.show', compact('shoe'));
 }
