@@ -22,7 +22,7 @@ return new class extends Migration
             $table->integer('price_buy');
             $table->integer('price_resell');
             $table->boolean('discount');
-            $table->string('image');
+            
 
             $table->timestamps();
 

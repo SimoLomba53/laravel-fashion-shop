@@ -24,9 +24,9 @@
 
         <label for="discount" class="form-label">Discount</label>
         <input type="text" class="form-control" id="discount" name="discount" />
-
+{{-- 
         <label for="image" class="form-label">img</label>
-        <input type="text" class="form-control" id="image" name="image" />
+        <input type="text" class="form-control" id="image" name="image" /> --}}
 
     
         

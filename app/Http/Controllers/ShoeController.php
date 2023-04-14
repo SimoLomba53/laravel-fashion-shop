@@ -23,4 +23,18 @@ public function create()
     return view('shoes.create');
 }
 
+public function store(Request $request)
+{
+    $data = $request->all();
+    $shoe = new Shoe;
+    $shoe->fill($data);
+    $shoe->save();
+    return redirect()->route('shoes.show', $shoe);
+}
+
+public function edit(Shoe $shoe)
+{
+  return view('shoes.edit', compact('shoe'));
+}
+
 }

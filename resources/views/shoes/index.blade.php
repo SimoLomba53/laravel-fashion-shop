@@ -30,7 +30,8 @@
             <td>{{ $shoe->discount }}</td>
             
             <td> <a href="{{ route('shoes.show', $shoe) }}"> Dettaglio </a>
-            <a href="{{ route('shoes.create') }}">Nuova scarpa</a>   
+            <a href="{{ route('shoes.create') }}">Nuova scarpa</a>
+            <a href="{{ route('shoes.edit', $shoe) }}">Modifica</a>  
             </td>
         </tr>
         @endforeach
