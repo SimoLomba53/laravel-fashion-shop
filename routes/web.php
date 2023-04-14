@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Guest\HomeController as GuestHomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShoeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 // # Guest route
 Route::get( '/',    [GuestHomeController::class,    'homepage'  ])->name('homepage');
+Route::resource('shoes', ShoeController::class);
 
 // # Protected routes
 Route::middleware('auth')

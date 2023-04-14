@@ -15,7 +15,18 @@ return new class extends Migration
     {
         Schema::create('shoes', function (Blueprint $table) {
             $table->id();
+            
+            $table->string('brand',40);
+            $table->string('model',30);
+            $table->integer('size');
+            $table->integer('price_buy');
+            $table->integer('price_resell');
+            $table->boolean('discount');
+            $table->string('image');
+
             $table->timestamps();
+
+
         });
     }
 
