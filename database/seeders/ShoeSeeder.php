@@ -24,7 +24,8 @@ class ShoeSeeder extends Seeder
          $shoe->price_buy= $faker->numberBetween(60,120);
          $shoe->price_resell= $faker->numberBetween(121,300);
          $shoe->discount=$faker->boolean();
-        //  $shoe->image=$faker->imageUrl(640, 480, 'animals', true);
+         $shoe->image = 'https://picsum.photos/300/200';
+        
          $shoe->save();
       }
     }

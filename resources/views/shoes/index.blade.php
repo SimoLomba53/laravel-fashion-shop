@@ -3,6 +3,7 @@
 
 @section('content')
     
+<a class="btn btn-primary my-5" href="{{ route('shoes.create') }}">Nuova scarpa</a>
 
 <table class="table">
     <thead>
@@ -30,13 +31,12 @@
             <td>{{ $shoe->discount }}</td>
             
             <td> <a href="{{ route('shoes.show', $shoe) }}"> Dettaglio </a>
-            <a href="{{ route('shoes.create') }}">Nuova scarpa</a>
+            
             <a href="{{ route('shoes.edit', $shoe) }}">Modifica</a>  
             </td>
         </tr>
         @endforeach
     </tbody>
 </table>
-@endsection
-
 {{ $shoes->links('pagination::bootstrap-5') }}
+@endsection
