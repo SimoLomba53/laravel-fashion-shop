@@ -17,8 +17,6 @@ use App\Http\Controllers\PageController;
 
 // # Guest route
 
-
 Route::get('/', [PageController::class, 'index'])->name('homepage');
-
 
 Route::resource('shoes', ShoeController::class);

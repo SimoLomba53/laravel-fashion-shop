@@ -45,14 +45,14 @@
     name="price_resell"
     value="{{ $shoe->price_resell }}"
 />
-
-<label for="discount" class="form-label">Discount</label>
-<input
-type="number"
-class="form-control"
-id="discount"
-name="discount"
-value="{{ $shoe->discount }}"
+    <label for="discount" class="form-label">Discount</label>
+    <input
+    type="number"
+    class="form-control"
+    id="discount"
+    name="discount"
+    value="{{ $shoe->discount }}"
 />
+
     <button type="submit" class="btn btn-primary">Salva</button>
 </form>

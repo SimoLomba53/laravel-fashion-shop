@@ -30,9 +30,15 @@
             <td>{{ $shoe->price_resell }}</td>
             <td>{{ $shoe->discount }}</td>
             
-            <td> <a href="{{ route('shoes.show', $shoe) }}"> Dettaglio </a>
+            <td> <a href="{{ route('shoes.show', $shoe) }}"> 
+                <i class="bi bi-box-arrow-up-right"></i>
+                dettaglio
+             </a>
             
-            <a href="{{ route('shoes.edit', $shoe) }}">Modifica</a>  
+            <a href="{{ route('shoes.edit', $shoe) }}">
+                <i class="bi bi-pencil"></i>
+                modifica
+            </a>  
             </td>
         </tr>
         @endforeach
