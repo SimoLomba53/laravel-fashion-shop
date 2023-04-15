@@ -54,15 +54,5 @@ id="discount"
 name="discount"
 value="{{ $shoe->discount }}"
 />
-{{-- 
-    <label for="image" class="form-label">Image</label>
-    <input
-        type="text"
-        class="form-control"
-        id="image"
-        name="image"
-        value="{{ $shoe->image }}"
-    /> --}}
-
     <button type="submit" class="btn btn-primary">Salva</button>
 </form>

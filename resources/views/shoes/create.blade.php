@@ -27,6 +27,6 @@
 
     
         
-        <button type="submit" class="btn btn-primary">Salva</button>
+        <button type="submit" class="btn btn-primary my-3">Salva</button>
     </form>
 </div>

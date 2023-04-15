@@ -12,4 +12,6 @@
 <strong>Discount:</strong> {{ $shoe->discount }} <br />
 <strong>Image</strong> <img src="{{ $shoe->image }}" alt=""> <br />
 
+<a class="btn btn-primary my-5" href="{{ route('shoes.index') }}">Ritorna alla Lista</a>
+
 @endsection

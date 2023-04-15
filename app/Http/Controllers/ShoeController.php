@@ -37,4 +37,11 @@ public function edit(Shoe $shoe)
   return view('shoes.edit', compact('shoe'));
 }
 
+public function update(Request $request, Shoe $shoe)
+{
+    $data = $request->all();
+    $shoe->update($data);
+    return redirect()->route('shoes.show', $shoe);
+}
+
 }
