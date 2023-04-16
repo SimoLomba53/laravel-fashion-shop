@@ -13,7 +13,7 @@
                             class="visually-hidden">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{ route('shoes.index') }}" aria-current="page">shoes <span
+                    <a class="nav-link active" href="{{ route('shoes.index') }}" aria-current="page">Snikers <span
                             class="visually-hidden">(current)</span></a>
                 </li>
                 

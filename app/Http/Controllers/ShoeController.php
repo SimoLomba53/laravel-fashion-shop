@@ -9,7 +9,7 @@ class ShoeController extends Controller
 {
 public function index()
 {
-  $shoes = Shoe::paginate(8);
+  $shoes = Shoe::orderBy('updated_at', 'DESC' )->paginate(10);
   return view('shoes.index', compact('shoes'));
 }
 
@@ -42,6 +42,12 @@ public function update(Request $request, Shoe $shoe)
     $data = $request->all();
     $shoe->update($data);
     return redirect()->route('shoes.show', $shoe);
+}
+
+public function destroy(Shoe $shoe)
+{
+    $shoe->delete();
+    return redirect()->route('shoes.index');
 }
 
 }

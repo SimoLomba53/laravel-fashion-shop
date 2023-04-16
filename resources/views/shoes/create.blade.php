@@ -2,14 +2,20 @@
 
 @vite(['resources/js/app.js'])
 
+@section('title', 'aggiungi una scarpa')
+
+@section('actions')
+<a class="btn btn-primary my-5" href="{{ route('shoes.index') }}">Torna alla lista</a>
+@endsection
+
 @section('content')
 
-<div class="container">
 
+<div class="card">
+  <div class="card-body">
     <form action="{{ route('shoes.store') }}" method="POST" class="row g-4">
         @csrf
-        
-    
+
         <div class="col-4"> 
           <label for="brand" class="form-label">Brand</label>
           <input type="text" class="form-control" id="brand" name="brand" value="{{ old('Brand') }}" />
@@ -45,6 +51,7 @@
         </div>
     
       </form>
+  </div>
 </div>
 
 @endsection
