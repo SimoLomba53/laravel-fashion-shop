@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Snikers')
+@section('title', 'Sneakers')
 
 @section('actions')
 <a class="btn btn-primary my-5" href="{{ route('shoes.create') }}">Nuova Scarpa</a>
@@ -14,14 +14,14 @@
             <thead>
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">brand</th>
-                    <th scope="col">model</th>
-                    <th scope="col">size</th>
-                    <th scope="col">price_buy</th>
-                    <th scope="col">price_resell</th>
-                    <th scope="col">discount</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Price Buy</th>
+                    <th scope="col">Price Resell</th>
+                    <th scope="col">Discount</th>
                    
-                    <th scope="col">actions</th>
+                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>

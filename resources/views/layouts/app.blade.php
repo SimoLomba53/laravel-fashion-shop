@@ -15,15 +15,17 @@
 
 <body>
   @include('partials.header')
+  <div class="main-cover">
   <main class="container">
     <div class="d-flex justify-content-between align-items-start my-3">
-        <h1 class="my-5">@yield('title')</h1>
+        <h1 class="my-5 text-white">@yield('title')</h1>
         
         @yield('actions')
     </div>
 
     @yield('content')
 </main>
+</div>
 </body>
 
 </html>

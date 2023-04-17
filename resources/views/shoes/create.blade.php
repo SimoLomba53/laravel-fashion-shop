@@ -45,6 +45,11 @@
           <label for="discount" class="form-label">Discount</label>
           <input type="text" class="form-control" id="discount" name="discount" value="{{ old('Discount') }}"/>
         </div>
+
+        <div class="col-4">
+          <label for="image" class="form-label">Image</label>
+          <input type="text" class="form-control" id="image" name="image" value="{{ old('image') }}"/>
+        </div>
     
         <div class="col-4">
           <button type="submit" class="btn btn-primary my-3">Salva</button>

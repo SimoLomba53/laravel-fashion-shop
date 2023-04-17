@@ -27,8 +27,8 @@
             <div class="col-4 my-4">
                 <strong>Discount:</strong> {{ $shoe->discount }} <br />
             </div>
-            <div class="offset-3 col-4">
-                <strong>Image:</strong> <img src="{{ $shoe->image }}" alt=""> <br />
+            <div class="offset-4 col-4">
+                <strong>Image:</strong> <img src="{{ $shoe->image }}" alt="" style="width:300px;height:250px"> <br />
             </div>
         </div>
     </div>
